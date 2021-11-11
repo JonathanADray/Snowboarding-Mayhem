@@ -13,6 +13,7 @@ public class FinishLine : MonoBehaviour
         {
             Debug.Log("You Finished!");
             finishEffect.Play();
+            GetComponent<AudioSource>().Play();
             Invoke("ReloadScene", delayTime); // Invoke has to use a method that you are delaying
         }
     }
