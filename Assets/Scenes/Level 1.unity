@@ -313,7 +313,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -361,7 +361,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -6018,7 +6018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605029776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.85, y: 8.2, z: -9.564577}
+  m_LocalPosition: {x: -1.85, y: 8.2, z: 0}
   m_LocalScale: {x: 4.7963, y: 2.8355, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6102,7 +6102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054794343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87, y: 10.54, z: -9.564577}
+  m_LocalPosition: {x: 0.87, y: 10.54, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6257,7 +6257,7 @@ GameObject:
   - component: {fileID: 1590241273}
   - component: {fileID: 1590241272}
   m_Layer: 0
-  m_Name: FinishEffect
+  m_Name: CrashEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6367,7 +6367,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -11109,7 +11109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813902917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.63, y: -62.53, z: 9.564577}
+  m_LocalPosition: {x: 387.63, y: -62.53, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11133,6 +11133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 1
+  finishEffect: {fileID: 247204221}
 --- !u!1 &2022333964
 GameObject:
   m_ObjectHideFlags: 0
@@ -11304,6 +11305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 0.5
+  crashEffect: {fileID: 1590241273}
 --- !u!1 &2082841136
 GameObject:
   m_ObjectHideFlags: 0
@@ -11401,7 +11403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133090776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8593, y: 3.8185, z: -9.564577}
+  m_LocalPosition: {x: 0.8593, y: 3.8185, z: 0}
   m_LocalScale: {x: 0.79164195, y: 13.168805, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11421,6 +11423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 2
+  finishEffect: {fileID: 0}
 --- !u!212 &2133090779
 SpriteRenderer:
   m_ObjectHideFlags: 0
